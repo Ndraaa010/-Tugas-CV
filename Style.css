@@ -1,0 +1,196 @@
+/* Style untuk seluruh halaman */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #242424;
+    color: #000000;
+}
+
+/* Header */
+header {
+    background-color: #0000001a;
+    color: #fefefe;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 2px 5px #0000001a;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    padding: 2px;
+    text-align: center;
+    background-color: #1d2323;
+    margin: 2px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 253, 253);
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    color: #071cff;
+}
+
+/* Section Styles */
+section {
+    display: flexbox;
+    margin: 20px ;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+h2 {
+    border-bottom: 2px solid #020101;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    color: #007bff;
+}
+
+.biodata{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.biodata img{
+    max-width: 200px;
+    margin-right: 25px;
+    box-shadow: #1d2323;
+}
+
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Pendidikan Section */
+section#Pendidikan ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section#Pendidikan ul li {
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+section#Pendidikan ul li:hover {
+    background-color: #1666b7;
+}
+
+/* Skills Section */
+
+section#Skills P{
+    list-style-type: none;
+    padding: 0;
+}
+
+section#Skills p{
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -ms-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+}
+
+section#Skills p:hover{
+    background-color: #1b66b2;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: #0d0909;
+    padding: 30px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1em;
+    box-shadow: 0 -2px 5px #0000001a;
+}
+
+footer a {
+    color: white;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #0b07ff;
+    text-decoration: none;
+}
+
+footer i {
+    font-size: 1.5em;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 3em;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+    
+.biodata {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+    
+    footer {
+        font-size: 0.9em;
+    }
+}
